@@ -31,7 +31,6 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-direction: column;
 }
 
 .wrapper {
@@ -47,6 +46,12 @@ header {
   color: var(--fun-text);
 }
 
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 form {
   background-color: var(--hightlight);
   border: 3px solid;
@@ -57,13 +62,8 @@ form {
   margin: 0 auto;
   max-width: 800px;
   padding: 30px 40px;
-  justify-content: center;
-  align-items: center;
-  align-content: center;
   border-radius: 1rem;
 }
-
-
 
 button {
   border: none;
@@ -86,16 +86,13 @@ button:hover {
   background-color: #c0c7cf;
 }
 
-.float-right {
-  float: right;
-}
-
-#password {
+#result {
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
   border: none;
   display: block;
+  background-color: white;
   width: 100%;
   padding-top: 15px;
   padding-left: 15px;
@@ -118,7 +115,7 @@ button:hover {
     padding: 10px 15px;
   }
 
-  #password {
+  #result {
     font-size: 1rem;
   }
 }

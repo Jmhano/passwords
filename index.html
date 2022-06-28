@@ -8,43 +8,43 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
+
     <div class="wrapper">
       <header>
         <h1>Password Generator</h1>
       </header>
+
       <div class="container">
-     
-  
         <form class = "form">
           <h1>Generate a Password</h1>
-          <label for="characterAmountNumber">Number of Characters</label>
           <div>
-            <input type="range" min="8" max="128" id="CharacterAmountRange" />
-            <input type="number" min="8" max="128" id="characterAmountNumber" />
+          <label for="characterAmountNumber">Password Length</label>
+            <input type="number" min="8" max="128" id="length" checked />
           </div>
           <div>
             <label for="inludeeUppercase">Include Uppercase Letters</label>
-            <input type="checkbox" id="includeUppercase" />
+            <input type="checkbox" id="uppercase" checked />
           </div>
           <div>
             <label for="includeLowercase">Include Lowercase Letters</label>
-            <input type="checkbox" id="includeLowercase" />
+            <input type="checkbox" id="lowercase" checked />
           </div>
 
           <div>
             <label for="includeSymbol">Include Symbols</label>
-            <input type="checkbox" id="includeSymbol" />
+            <input type="checkbox" id="symbol" checked/>
           </div>
 
           <div class="form-body">
             <text area="readonly"
-              id="password"
+              id="result"
               placeholder="Your Secure Password"
-              aria-label="Generated Password"
-            >
+              aria-label="Generated Password">
           </div>
 
-          <button type="submit">Generate Password</button>
+          <button class="submit" id="generate">
+            Generate Password
+          </button>
         </form>
       </div>
     </div>
