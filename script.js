@@ -97,3 +97,5 @@ function getRandomSymbol() {
   var symbols = "!@#$%^&*()_+";
   return symbols[Math.floor(Math.random() * symbols.length)];
 }
+
+window.alert(copy);
