@@ -73,7 +73,7 @@ function generatePassword(lower, upper, symbol, length) {
       // 1: funcName = upper
       // 2: funcName = symbol
       generatedPassword += randomFunc[funcName];
-      // 0: generatedPassword = o
+      /// 0: generatedPassword = o
       // 1: generatedPassword = oF
       // 3: generatedPassword = oF%
     });
